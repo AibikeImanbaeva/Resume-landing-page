@@ -1,0 +1,365 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Playfair Display", serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+section {
+  min-height: 840px;
+}
+.container {
+  width: 77%;
+  max-width: 1450px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  background-color: #d0ccb1;
+}
+.navbar_ul {
+  display: flex;
+  justify-content: space-between;
+  width: 459px;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.navbar_ul a {
+  text-decoration: none;
+  color: #7e818d;
+}
+
+.first label {
+  display: none;
+  z-index: 60;
+  right: 0;
+}
+
+.first #hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .first label {
+    display: block;
+    font-size: 40px;
+    padding: 0 30px;
+  }
+  .navbar label {
+    position: fixed;
+  }
+  .navbar_ul {
+    display: none;
+  }
+  .first input:checked ~ .navbar_ul {
+    display: block;
+    position: fixed;
+    z-index: 50;
+    background-color: #4a4c53;
+    /* width: 100vw;
+            height: 100vh; */
+    padding: 2vw;
+    /* margin-left: 60vw; */
+
+    opacity: 0.9;
+    top: 0;
+    right: 0;
+    width: 100vw;
+  }
+}
+
+.first {
+  background: url(../img/tabletki_raznotsvetnyj_perfektsionizm_140364_1920x1080.jpg)
+    no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: 840px;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.main__title h1 {
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 20%;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.main__title h2 {
+  width: 14%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: beige;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 1000;
+}
+
+.second {
+  background: url(../img/tsvetok_gorshok_okno_207831_1920x1200.jpg) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  padding-bottom: 10px;
+  background-attachment: fixed;
+}
+
+.potfolio_text {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  width: 50%;
+  padding-top: 15%;
+}
+
+.potfolio_text h2 {
+  margin-bottom: 10%;
+  font-size: 3rem;
+}
+
+.potfolio_text p {
+  font-size: 1.3rem;
+  color: #3d3e39;
+}
+
+.portfolio__button {
+  margin: 5% auto;
+  /* position: relative; */
+  display: block;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-family: "montserrat";
+  text-decoration: none;
+  border: 4px solid #656161;
+  padding: 14px 60px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.portfolio__button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.portfolio__image {
+  border: 2px solid #55c5e9;
+  padding: 15px;
+  background: #666;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.third {
+  background: url(../img/devushka_razmetki_progulka_125579_1920x1200.jpg)
+    no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.blog_title {
+  margin: 1% auto;
+
+  width: 5%;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.title_h2 {
+  margin: 1% auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.card_first {
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(17, 16, 16);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  color: antiquewhite;
+}
+
+.card_first img {
+  margin: 2px auto;
+  width: 350px;
+  height: 250px;
+}
+
+.card_four {
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(17, 16, 16);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  color: antiquewhite;
+  margin-bottom: 20px;
+}
+
+.card_four img {
+  margin: 2px auto;
+  width: 350px;
+  height: 250px;
+}
+
+.about_text {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 1000;
+}
+
+.about_desc {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_block_right {
+  height: 200px;
+  width: 200px;
+}
+
+.block_left {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-top: 100px;
+  margin-right: 200px;
+}
+
+.four {
+  background: url(../img/arhitektura_minimalizm_linii_125812_1920x1080.jpg)
+    no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  padding-bottom: 10px;
+  background-attachment: fixed;
+}
+
+.center {
+  background: url(../img/polosa_sinij_bleklyj_168995_1920x1080.jpg) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+  /* padding-bottom: 10px; */
+}
+
+.friends {
+  height: 400px;
+  width: 700px;
+  margin-top: 400px;
+  margin-left: 700px;
+}
+.center__text {
+  display: inline-block;
+  width: 501px;
+  height: 500px;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-right: 50px;
+}
+.container_1 {
+  height: 900px;
+}
+.footer {
+  background: url(../img/gory_zasnezhennyj_nebo_147949_1920x1200.jpg) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  height: auto;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 200px;
+  background-attachment: fixed;
+}
+
+.footer__right h6 {
+  font-size: 2rem;
+  color: #656161;
+  margin-bottom: 20px;
+}
+
+.footer__right a {
+  color: rgb(63, 57, 107);
+  padding-right: 10px;
+}
+.row {
+  margin-top: 20px;
+}
+.footer_menu {
+  width: 77%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  font-size: 1.3rem;
+}
+.footer_menu_text {
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+.footer_socials_text {
+  font-size: 1.3rem;
+  margin-top: 45px;
+  line-height: 25px;
+  width: 90%;
+}
+.footer_socials_icons {
+  margin-left: 1%;
+}
+.footer_menu_text a {
+  color: #1e1e1d;
+  font-family: "Roboto", sans-serif;
+}
